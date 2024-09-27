@@ -9,4 +9,4 @@ function copyAndSortArray(arr){
 };
 
 console.log(copyAndSortArray(array));
-//sort array
+//sort array 
