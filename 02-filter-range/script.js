@@ -1,11 +1,11 @@
-let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+function filterRange(arr, a, b){
+// Take an Array
+// Look for elements: element >= a, element <=b
 
-function filterValues (arr) {
-    
-}
-
-filterRange (arr, a, b){
-    //Filter method
-    arr.filter()
-    //Function that returns values that are a<= and b>=
+let filtered = arr.filter(element => {return element >= a && element<= b});
+// Return results as an array
+return filtered;
 };
+
+console.log(filterRange(nums, 3, 6));
