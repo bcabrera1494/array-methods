@@ -1,11 +1,12 @@
 let array = ["HTML", "CSS", "JavaScript", "Spanish", "Cebuano"];
 let copy = [];
 
-function copyArray(arr){
+function copyAndSortArray(arr){
    let length = arr.length;
    let arrCopy = arr.slice(-(length));
-   return arrCopy;
+   let sortedArray = arrCopy.sort()
+   return sortedArray;
 };
 
-console.log(copyArray(array));
+console.log(copyAndSortArray(array));
 //sort array
