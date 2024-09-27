@@ -3,13 +3,15 @@ let string = 'kopi-joe-widdle';
 function camelize(str){
     // split the string by '-' delim
     let split = str.split('-');
-    return split;
-    // Extract the 1st letter of each array item
+    split;
+    // Map the array split and run upperCase()
+    let upperCased = split.map(upperCase);
+    return upperCased;
 };
 
-function upperCase(ltr, index){
+function upperCase(str){
     //get a single character string "ltr" - use index 0?
-    let modLtr = ltr[index].toUpperCase() + ltr.slice(1);
+    let modLtr = str[0].toUpperCase() + str.slice(1);
     return modLtr;
     //call the ltr.toUpperCase();
 };
@@ -19,4 +21,4 @@ function concatStr(str){
 };
 
 console.log(camelize(string));
-console.log(upperCase(string, 0));
+console.log(camelize("jeremy-allen-white"));
