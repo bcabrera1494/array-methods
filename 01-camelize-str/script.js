@@ -3,5 +3,12 @@ let string = 'kopi-joe-widdle';
 
 function camelize(str){
     let split = str.split('-');
-    return split;
+    split;
+};
+
+function upperCase(ltr){
+    //get a single character string "ltr"
+    //call the ltr.toUpperCase();
 }
+
+console.log(camelize(string));
