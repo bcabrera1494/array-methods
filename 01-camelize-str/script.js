@@ -22,3 +22,6 @@ function concatStr(str){
 
 console.log(camelize(string));
 console.log(camelize("jeremy-allen-white"));
+console.log(camelize('sydney-kate-sullivan'));
+console.log(camelize('maria-beatrice-isabel-garcillano-cabrera'));
+console.log(camelize('lopi-joe-diddle'));
