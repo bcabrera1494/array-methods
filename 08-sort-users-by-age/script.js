@@ -3,18 +3,20 @@ let mama = {name: "Sydney", age: "28"};
 let papa = {name: "Bea", age: "29"};
 
 let users = [papa, kopi, mama];
-let ages = map((user)=> user.age);
 
 function sortByAge(array){
-    array.sort((a, b) => {
-        if (a>b) return 1;
-        if (a==b) return 0;
-        if (a<b) return -1;
+    let ages = array.map((user)=> user.age);
+    ages;
+    ages.sort((a, b) => {
+        if (a > b) return b;
+        if (a == b) return 0;
+        if (a < b) return a;
     });
-// Access the user age
-// write the sorting to compare as numerics
-// sort the users by ascending age
-// check that they are in order by age
+    return ages;
+
 };
 
-console.log();
+console.log(users[0]);
+console.log(users[1]);
+console.log(users[2]);
+console.log(sortByAge(users));
