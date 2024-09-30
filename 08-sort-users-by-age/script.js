@@ -4,16 +4,10 @@ let papa = {name: "Bea", age: "29"};
 
 let users = [papa, kopi, mama];
 
-function sortByAge(array){
-    let ages = array.map((user)=> user.age);
-    ages;
-    ages.sort((a, b) => {
-        if (a > b) return b;
-        if (a == b) return 0;
-        if (a < b) return a;
-    });
-    return ages;
-
+function sortByAge(array) {
+    let ages = array.map((user) => user.age);
+    ages.sort((a, b) =>  a - b);
+    return array;
 };
 
 console.log(users[0]);
