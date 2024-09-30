@@ -11,8 +11,12 @@ let beau = { name: "Beau", age: 29};
 
 let users = [kopi, mama, beau];
 
-console.log(users);
+function getNames(list){
+ list.map((user) => {
+    return user.name;
+ })
+};
 
-let names = [kopi.name, mama.name, beau.name];
+let names = getNames(users);
 
 console.log(names);
