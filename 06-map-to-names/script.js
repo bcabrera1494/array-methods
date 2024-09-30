@@ -12,15 +12,15 @@ let beau = { name: "Beau", age: 29 };
 let users = [kopi, mama, beau];
 let arrayOfNames = new Array;
 
-function getNames() {
-    users.map((user) => {
-        arrayOfNames.push(user.name);
-        return arrayOfNames;
-    });
-};
+// function getNames() {
+//     users.map((user) => {
+//         arrayOfNames.push(user.name);
+//         return arrayOfNames;
+//     });
+// };
 
-getNames(users);
+// getNames(users);
 
-let names = arrayOfNames;
+let names = users.map(item => item.name);
 
 console.log(names);
