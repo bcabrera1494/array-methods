@@ -5,18 +5,22 @@
 
 // alert( names ); // John, Pete, Mary
 
-let kopi = { name: "Kopi", age: 5};
-let mama = { name: "Sydney", age: 28};
-let beau = { name: "Beau", age: 29};
+let kopi = { name: "Kopi", age: 5 };
+let mama = { name: "Sydney", age: 28 };
+let beau = { name: "Beau", age: 29 };
 
 let users = [kopi, mama, beau];
+let arrayOfNames = new Array;
 
-function getNames(list){
- list.map((user) => {
-    return user.name;
- })
+function getNames() {
+    users.map((user) => {
+        arrayOfNames.push(user.name);
+        return arrayOfNames;
+    });
 };
 
-let names = getNames(users);
+getNames(users);
+
+let names = arrayOfNames;
 
 console.log(names);
