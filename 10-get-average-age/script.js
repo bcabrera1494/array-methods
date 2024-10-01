@@ -10,9 +10,9 @@ function getAverageAge(array) {
     // add the users ages
     let arraySum = array.reduce((sum, current) => sum + current, 0);
     // divide by number of ages to calculate average
-    let averageAge = arraySum / 4;
+    let averageAge = arraySum / array.length;
     return averageAge
     // return average age
 }
 
-console.log(ages);
+console.log(getAverageAge(ages));
