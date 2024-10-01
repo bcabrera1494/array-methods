@@ -15,4 +15,4 @@ function getAverageAge(array) {
     // return average age
 }
 
-console.log(getAverageAge(ages));
+console.log(getAverageAge(ages)); 
