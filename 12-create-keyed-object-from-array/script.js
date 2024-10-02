@@ -7,14 +7,17 @@ let users = [
 function groupById(array) {
     // declare an empty object
     let obj = new Object(array);
+    // array.forEach(user => {user[user.id] = user[i]});
 
-    // add the id as the group label + the full object to obj *** Done individually, but there may be an more elegant way
-        // for (let i = 0; i < array.length; i++) {
-        //     array.map(i => obj[array[i].id] = obj[i])
-        // };
-    obj[users[0].id] = obj[0];
-    obj[users[1].id] = obj[1];
-    obj[users[2].id] = obj[2];
+    obj.forEach(o => {
+    let i = obj.indexOf(o);
+    array[array[i].id] = o;
+    return obj;
+    });
+
+    // obj[users[0].id] = obj[0];
+    // obj[users[1].id] = obj[1];
+    // obj[users[2].id] = obj[2];
 
     // array.reduce(() => {});
     // //return the newly created object
