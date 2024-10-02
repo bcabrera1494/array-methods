@@ -6,22 +6,19 @@ let users = [
 
 function groupById(array) {
     // declare an empty object
-    let obj = new Object(array);
-    // array.forEach(user => {user[user.id] = user[i]});
+    // let obj = new Object(array);
 
-    obj.forEach(o => {
-    let i = obj.indexOf(o);
+    // add the id as the key for each object using .forEach()
+    array.forEach(o => {
+    let i = array.indexOf(o);
     array[array[i].id] = o;
-    return obj;
+    return array;
     });
 
-    // obj[users[0].id] = obj[0];
-    // obj[users[1].id] = obj[1];
-    // obj[users[2].id] = obj[2];
-
     // array.reduce(() => {});
-    // //return the newly created object
-    return obj;
+
+    // //return the array
+    return array;
 };
 
 console.log(groupById(users));
