@@ -9,15 +9,19 @@ function groupById(array) {
     // let obj = new Object(array);
 
     // add the id as the key for each object using .forEach()
-    array.forEach(o => {
-    let i = array.indexOf(o);
-    array[array[i].id] = o;
-    return array;
-    });
+    // array.forEach(o => {
+    //     let i = array.indexOf(o);
+    //     array[array[i].id] = o;
+    //     return array;
+    // });
 
-    // array.reduce(() => {});
+    // using reduce method *** NOT WORKING YET
+    array.reduce((newArr, object) => {
+        let i = array.indexOf(object);
+        newArr[array[i].id] = object
+        return object}, {});
 
-    // //return the array
+    //return the array
     return array;
 };
 
