@@ -18,9 +18,9 @@ function groupById(array) {
     // using reduce method *** NOT WORKING YET
     array.reduce((newArr, object) => {
         let i = array.indexOf(object);
-        newArr[array[i].id] = object
-        return object}, {});
-
+        newArr[array[i].id] = object;
+        // newArr.splice(0, 0, object)}, {}); ***Trying to append the object to newArr***
+        return newArr
     //return the array
     return array;
 };
