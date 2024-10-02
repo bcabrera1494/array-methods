@@ -6,16 +6,14 @@ let users = [
 
 function groupById(array){
 // declare an empty object
-let obj = Object.create(users);
-// access users.id for each object
-let ids = users.map(object => object.id);
-ids;
-obj.constructor()
-// access users objects
-let userObjects = users.map(object => object);
-userObjects;
+let obj = new Object(array);
+
+obj[array[0].id] = obj[0];
+// add the id as the group label + the full object to obj
+
+// Object.defineProperty(obj[0], 'id', (users[0].id)); ***Don't understand how to use .defineProperty***
+
 // array.reduce(() => {});
-// // add the id as the group label + the full object to obj
 // //return the newly created object
 return obj;
 }; 
