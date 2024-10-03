@@ -5,16 +5,6 @@ let users = [
 ];
 
 function groupById(array) {
-    // declare an empty object
-    // let obj = new Object(array);
-
-    // add the id as the key for each object using .forEach()
-    // array.forEach(o => {
-    //     let i = array.indexOf(o);
-    //     array[array[i].id] = o;
-    //     return array;
-    // });
-
     // using reduce method *** NOT WORKING YET
    return array.reduce((object, accObj) => {
         object[accObj.id] = accObj;
