@@ -16,13 +16,11 @@ function groupById(array) {
     // });
 
     // using reduce method *** NOT WORKING YET
-    array.reduce((newArr, object) => {
-        let i = array.indexOf(object);
-        newArr[array[i].id] = object;
-        // newArr.splice(0, 0, object)}, {}); ***Trying to append the object to newArr***
-        return newArr
-    //return the array
-    return array;
+   return array.reduce((object, accObj) => {
+        object[accObj.id] = accObj;
+        return object}, {});
+        // Trying to append the object to newArr
+        //return the array
 };
 
 console.log(groupById(users));
